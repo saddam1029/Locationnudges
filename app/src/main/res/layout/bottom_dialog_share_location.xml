@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/ivRemove"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/cross"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutNotFinishTask"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivGroup"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/group"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivGroup"
+            android:textAlignment="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="Simplify in-store shopping\n with store mode!"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/light_black"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:lineSpacingExtra="@dimen/_5ssp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="Share your location, and you can use store\n mode to easily check prices, find items \n with store maps and check out faster with\n Walmart Pay."
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/silver"/>
+
+        <Button
+            android:id="@+id/btShareLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/tvDescription"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/blue"
+            android:text="Share Location"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvNotKnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btShareLocation"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAlignment="center"
+            android:lineSpacingExtra="@dimen/_5ssp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_12ssp"
+            android:text="@string/my_text"
+            android:textColor="@color/silver"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_below="@id/tvNotKnow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_60sdp"
+            android:background="@drawable/background_bottom_dialog" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Store</string>
+
+    <string name="my_text"><u>Not Know</u></string>
+    <string name="store_mode"><u>Try store mode now</u></string>
+    <string name="my_text_description">We need to know your location for features like:\n Scan and Go, fuel discounts, pickup check in, delivery estimates and to show you nearby\n stores, items, and in-store services. <u>Learn more.</u></string>
+</resources>
